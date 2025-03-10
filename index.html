@@ -4,7 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mengan Wang</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        #corner-image {
+            position: fixed; /* Fixed positioning works better */
+            bottom: 20px;
+            right: 20px;
+            width: 150px;
+            height: auto;
+            transform: rotate(180deg);
+            z-index: 100; /* Ensure it's above other elements */
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin-top: 10vh;
+            }
+            
+            #corner-image {
+                width: 100px;
+            }
+        }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -15,5 +35,7 @@
             <p>engineer in sf. ucla 2024 🐻. DMs open!</p>
         </main>
     </div>
+    
+    <img src="xd.png" alt="Stick figure" id="corner-image">
 </body>
 </html> 
